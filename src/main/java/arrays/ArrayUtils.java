@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ArrayUtils {
 
+
 	public static int sum(int[] numbers) {
 		int sum = 0;
 		for (Integer n : numbers) {
@@ -22,10 +23,14 @@ public class ArrayUtils {
 		return (double) sum(numbers) / numbers.length;
 	}
 
-	public static int[] reverse(int[] numbers) {
 
-		return new int[0];
-	}
+		public static int[] reverse(int[] numbers) {
+			int[] newNumbers = new int[numbers.length];
+			for (int i = 0; i < numbers.length; i++) {
+				newNumbers[newNumbers.length - 1 - i] = numbers[i];
+			}
+			return newNumbers;
+		}
 
 	public static int[] add(int[] a, int[] b) {
 		return new int[0];
