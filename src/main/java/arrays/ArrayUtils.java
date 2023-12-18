@@ -33,6 +33,10 @@ public class ArrayUtils {
 		}
 
 	public static int[] add(int[] a, int[] b) {
-		return new int[0];
+		int[] result = new int[a.length];
+		for (int i = 0; i < a.length; i++) {
+			result[i] = a[i] + b[i];
+		}
+		return result;
 	}
 }
